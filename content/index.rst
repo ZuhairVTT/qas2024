@@ -1,35 +1,47 @@
-LESSON NAME
-===========
+Quantum Autumn School 2024
+==========================
 
-Intro
+Recent developments in quantum technology are bringing the world closer to a new technological revolution – the advent of usable quantum computers able to provide enormous acceleration to important computational tasks. In coming years, quantum computing is expected to have a significant impact on many areas of research that can utilise computational modelling. 
+Indeed, significant efforts and investments are currently underway in Europe to `bolster skills and capacity within quantum computing <https://enccs.se/news/2024/06/european-hpc-quantum-computing-infrastructure/>`__.
 
+ENCCS joins forces again this year with `NordIQuEst <https://nordiquest.net>`__, to deliver a three-day quantum autumn school in early December 2024! The school will also be visited by and contributed to by several companies who are developing in-house expertise in various application domains of quantum computing.
 
+NordΙQuEst brings together a consortium of seven partners from five Nordic and Baltic countries to connect world leading traditional HPC resources and quantum computers across national borders with the aim to establish a quantum computing platform customised to the needs of the region.
+
+The quantum autumn school will be held in Stockholm in hybrid form, in-person and online.
 
 .. prereq::
 
-   prerequisites
-
-
-
-.. csv-table::
-   :widths: auto
-   :delim: ;
-
-   20 min ; :doc:`filename`
+   For the hands-on tutorials, basic familiarity with Python and some experience working in a Unix environment are desirable. Some previous experience with quantum computing is expected.
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: The lesson
+   :caption: Setup
+
+   setup
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: Reference
+   :caption: Day 1
 
-   quick-reference
-   guide
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Day 2
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Day 3
+
+.. toctree::
+   :maxdepth: 1
+   :caption: About
+
+   All ENCCS lessons <https://enccs.se/lessons/>
+   About ENCCS <https://enccs.se/>
 
 
 .. _learner-personas:
