@@ -46,6 +46,7 @@ myst_enable_extensions = ["dollarmath",
                           "html_image",
 #                          "myst_dmath_double_inline"
                           ]
+myst_heading_anchors = 3
 source_suffix = {".rst": "restructuredtext", ".ipynb": "myst-nb", ".myst": "myst-nb"}
 
 # https://myst-nb.readthedocs.io/en/latest/use/execute.html#triggering-notebook-execution
