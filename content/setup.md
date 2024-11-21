@@ -65,15 +65,15 @@ Make sure that both Python and conda are correctly installed:
 
 ```console
 $ python --version
-$ # should give something like Python 3.10.13
+$ # should give something like Python 3.11.7
 $ conda --version
-$ # should give something like conda 23.7.2
+$ # should give something like conda 24.9.2
 ```
 
 A `requirements.txt` file is provided which contains all of the python packages to install a local software environment on your computer. Using this a `conda` environment can be created using the command:
 
 ```console
-$ conda create --name qas2024 -y python=3.10 pip
+$ conda create --name qas2024 -y python=3.11.7 pip
 ```
 
 Which creates a new conda environment with Python 3.10 and `pip`. You can then activate it and install the python packages:
