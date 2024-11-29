@@ -26,11 +26,15 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
    :maxdepth: 1
    :caption: Day 1
 
+   welcome
 
 .. toctree::
    :maxdepth: 1
    :caption: Day 2
 
+   notebooks/Decoding_excercise.ipynb	     
+   qmc_fin
+   notebooks/option_pricing_qmc.ipynb
 
 .. toctree::
    :maxdepth: 1
