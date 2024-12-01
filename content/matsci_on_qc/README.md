@@ -9,15 +9,15 @@ summary: Introduction to simulating materials using quantum computers
 
 ## Contents
 
-- [Introduction](#introduction)
-- [Why Quantum Computing for Materials?](#why-quantum-computing-for-materials)
-- [Prerequisites](#prerequisites)
-- [Hands-on Examples](#hands-on-examples)
-  - [Classical Calculations](#1-classical-calculations)
-  - [Hybrid Quantum-Classical Implementation](#2-hybrid-quantum-classical-calculation)
-  - [Results & Analysis](#3-calculations-results)
-    - [Binding Energy Comparison](#binding-energy-comparison)
-    - [Discussion & Future Work](#outlook-and-discussion)
+- Introduction
+- Why Quantum Computing for Materials?
+- Prerequisites
+- Hands-on Example
+  - Classical Calculations
+  - Hybrid Quantum-Classical Calculation
+  - Results & Analysis
+    - Binding Energy Comparison
+    - Discussion & Future Work
 
 ## Introduction
 
@@ -35,7 +35,7 @@ To follow this tutorial, you should have a basic understanding of quantum comput
 
 ## Hands-on Example
 
-### 1. Classical calculations
+### 1. Classical Calculations
 For detailed information about the classical calculations, including supercell generation, geometry optimization, supercell calculations, and binding energy calculation, please see [Classical Calculations](classical_calculations.md).
 
 ### 2. Hybrid Quantum Classical Calculation
@@ -70,7 +70,7 @@ E_binding = E_supercell - (E_substrate + E_inhibitor)
 | AdaptVQE | 1,2,4-Triazole | -0.385508 | 3.54 |
 | Vanilla VQE | 1,2,4-Triazole | -2.325986 | 3.54 |
 
-#### Results Analysis
+#### Discussion and Future Work
 
 The results of this simulations show an agreement between classical DFT and AdaptVQE method. The AdaptVQE implementation proved more robust with its gradient-based operator pool selection compared to the vanilla VQE, which showed significant deviation with notably higher binding energy.
 
