@@ -13,3 +13,5 @@ graphviz
 qiskit-finance
 qiskit
 pydot
+qiskit-ibm-runtime
+qiskit-aer
