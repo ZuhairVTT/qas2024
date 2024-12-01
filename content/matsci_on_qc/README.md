@@ -11,7 +11,13 @@ summary: Introduction to simulating materials using quantum computers
 
 - [Introduction](#introduction)
 - [Why Quantum Computing for Materials?](#why-quantum-computing-for-materials)
+- [Prerequisites](#prerequisites)
 - [Hands-on Examples](#hands-on-examples)
+  - [Classical Calculations](#1-classical-calculations)
+  - [Hybrid Quantum-Classical Implementation](#2-hybrid-quantum-classical-calculation)
+  - [Results & Analysis](#3-calculations-results)
+    - [Binding Energy Comparison](#binding-energy-comparison)
+    - [Discussion & Future Work](#outlook-and-discussion)
 
 ## Introduction
 
@@ -22,6 +28,10 @@ Quantum chemistry calculations are among the most promising early applications o
 The simulation of large solid-state systems typically involves a significant number of atoms, which necessitates approximations in calculating the ground state energy. Methods like Density Functional Theory (DFT) are useful in this context. However, there are important parts of the system that can be described more accurately, especially when they involve interactions of particular interest to scientists. Quantum computing algorithms could be advantageous in focusing on such subsystems of the supercell and communicating the results to the DFT code. In simpler terms, they can correct the energy by accounting for more detailed information from these specific subsystems. This approach is known as quantum embedding[^1]. Of course, this is a very simplified description and can be considered analogous to the QM/MM method; again, this is just a simplification of the problem description and not an entirely accurate illustration. 
 
 It is a hot topic now given the quantum centeric supercomputers effort and the rise of hybrid quantum classical approaches. More recent literature to study can be found in those references[^2] [^3] [^4] [^5].
+
+## Prerequisites
+
+To follow this tutorial, you should have a basic understanding of quantum computing and materials science. Familiarity with quantum chemistry calculations and Density Functional Theory (DFT) will be helpful.
 
 ## Hands-on Example
 
