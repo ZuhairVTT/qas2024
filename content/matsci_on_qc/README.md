@@ -5,6 +5,8 @@ summary: Introduction to simulating materials using quantum computers
 
 # Quantum Computing for Materials Science
 
+> **Note**: This tutorial is based on research work available on [arXiv:6036926](https://arxiv.org/submit/6036926/view). Related codes and input files can be found in the [2024_inhibitQ repository](https://github.com/MarcMaussner/2024_inhibitQ/tree/main/phase2_submission).
+
 ## Contents
 
 - [Introduction](#introduction)
@@ -24,64 +26,51 @@ It is a hot topic now given the quantum centeric supercomputers effort and the r
 ## Hands-on Example
 
 ### 1. Classical calculations
+For detailed information about the classical calculations, including supercell generation, geometry optimization, supercell calculations, and binding energy calculation, please see [Classical Calculations](classical_calculations.md).
 
-The classical calculations are organized in several steps:
+### 2. Hybrid Quantum Classical Calculation
 
-#### a. Supercell generation
-- Setting up the supercell that contains the periodic system ready for the CP2K calculations. Example can be a supercell of Al(111) surface and inhibitor on top of the Al(111) substrate
-- The script for generating the supercell is [`here`](0_classical_calculations/0_supercell_generation/supercell_generator) (download [`here`](0_classical_calculations/0_supercell_generation/supercell_generator.py)).
+This section demonstrates the integration of classical DFT calculations with quantum computing methods through an active space embedding scheme. The implementation combines CP2K for classical DFT calculations with Qiskit for quantum computations, using an active space of 2 electrons in 5 orbitals.
 
-#### b. Geometry Optimization
-- We need to optimize the geometry of the system to get the best possible structure to feed to the DFT calculation. Here we use ASE to optimize the structure with machine learning potential to accelerate the calculation with near DFT quality.
-- More details regarding the geometry optimization steps are [`detailed here`](0_classical_calculations/1_geometry_optimization/gemetry_optimize.md) and the related script can be downloaded from [`here`](0_classical_calculations/1_geometry_optimization/geo_opt.py)
+Key components include:
+- Classical DFT calculations using CP2K
+- Quantum calculations using ADAPT-VQE algorithm
+- Active space embedding with SCF methodology
+- Socket-based integration between classical and quantum components
 
-#### c. Supercell Calculations
-- Now, we can perform the DFT calculations for the periodic system. Please follow the details [`here`](0_classical_calculations/2_supercell_calculation/supercell_calculation.md) regarding the system setup and calculational details where the supercell DFT calculations is performed using CP2K code.
+For detailed implementation information, including configuration parameters and workflow structure, see [Hybrid Quantum Classical Calculations](hybrid_quantum_classical.md).
 
-#### d. Binding Energy Calculation
-- Now, we can calculate the binding energy of the inhibitor on the Al(111) surface. The script for calculating the binding energy and more details are [`in this page`](0_classical_calculations/5_binding_energy/binding_energy.md)
+### 3. Calculations Results
 
+After performing the hybrid quantum-classical calculations, we analyze the binding energy to understand the interaction strength between the surface and the adsorbate. The binding energy is calculated as:
 
-### 3. Quantum System Preparation
-- Example: [`2_supercell/`](2_supercell)
-  ```python
-  # Supercell creation for periodic boundary conditions
-  from ase.build import make_supercell
-  supercell = make_supercell(atoms, [[2,0,0], [0,2,0], [0,0,1]])
-  ```
+```python
+E_binding = E_supercell - (E_substrate + E_inhibitor)
+```
 
-### 4. Quantum Simulations
-- Al surface modeling ([`3_Al/`](3_Al))
-- Inhibitor interaction studies ([`4_inhibitor/`](4_inhibitor))
-- Example from [`analysis.ipynb`](analysis):
-  ```python
-  # Example adaptive VQE setup
-  from qiskit.algorithms.minimum_eigensolvers import VQE
-  from qiskit.circuit.library import TwoLocal
-  
-  ansatz = TwoLocal(num_qubits, 'ry', 'cz')
-  vqe = VQE(ansatz, optimizer)
-  ```
+#### Geometry Optimization Results
+- **1,2,4-Triazole**:
+  - Binding distance: 3.54 Å
 
-### 5. Practical Implementation Steps
-1. System preparation
-   - Geometry optimization
-   - Electronic structure calculation
-2. Quantum circuit construction
-   - Hamiltonian mapping
-   - Ansatz selection
-3. VQE execution
-   - Parameter optimization
-   - Energy calculation
-4. Results analysis
-   - Convergence checking
-   - Property calculation
+#### Binding Energy Comparison
 
-### 7. Performance Comparisons
-- Classical DFT vs Quantum results
-- Resource requirements analysis
-- Error analysis and mitigation strategies
+| Method | Inhibitor | Binding Energy (eV) | Binding Distance (Å) |
+|--------|-----------|-------------------|--------------------|
+| Classical DFT | 1,2,4-Triazole | -0.385512 | 3.54 |
+| AdaptVQE | 1,2,4-Triazole | -0.385508 | 3.54 |
+| Vanilla VQE | 1,2,4-Triazole | -2.325986 | 3.54 |
 
+#### Results Analysis
+
+The results of this simulations show an agreement between classical DFT and AdaptVQE method. The AdaptVQE implementation proved more robust with its gradient-based operator pool selection compared to the vanilla VQE, which showed significant deviation with notably higher binding energy.
+
+#### Outlook and Discussion
+
+The calculation employed an active space of 2 electrons in 5 orbitals (10 spin-orbitals) around the Fermi level. The AdaptVQE implementation used a gradient threshold of 1e-4 and DFT embedding convergence of 1E-6, while the vanilla VQE used a less stringent convergence threshold of 2E-5. For more accurate results, expanding the active space to include more orbitals could lead to different binding energies compared to the classical approach, particularly in better capturing the complex hybridization between molecular orbitals and substrate states. At the time of writting this tutorial, only the assigned number of orbitals and electrons managed the calculation to converge.
+
+#### Conclusion and Future Work
+
+This work successfully demonstrating a workflow for hybrid quantum-classical calculations for materials science, suitable for running on quantum centric supercomputers like Lumi. A lot of work is still needed to make this method practical for large systems and to improve the convergence of the calculation when using the AdaptVQE algorithm and including more orbitals in the active space, which will make the calculation worth it on quantum computers. Ofcourse, error mitigation techniques will be needed to make this method practical, but that is another story.
 
 ## References
 
