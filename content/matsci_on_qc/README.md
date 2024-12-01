@@ -9,15 +9,15 @@ summary: Introduction to simulating materials using quantum computers
 
 ## Contents
 
-- Introduction
-- Why Quantum Computing for Materials?
-- Prerequisites
-- Hands-on Example
-  - Classical Calculations
-  - Hybrid Quantum-Classical Calculation
-  - Results & Analysis
-    - Binding Energy Comparison
-    - Discussion & Future Work
+- [Introduction](#introduction)
+- [Why Quantum Computing for Materials?](#why-quantum-computing-for-materials)
+- [Prerequisites](#prerequisites)
+- [Hands-on Example](#hands-on-example)
+  - [Classical Calculations](#classical-calculations)
+  - [Hybrid Quantum-Classical Calculation](#hybrid-quantum-classical-calculation)
+  - [Results & Analysis](#results-and-analysis)
+    - [Binding Energy Comparison](#binding-energy-comparison)
+    - [Discussion & Future Work](#discussion-and-future-work)
 
 ## Introduction
 
@@ -31,12 +31,16 @@ It is a hot topic now given the quantum centeric supercomputers effort and the r
 
 ## Prerequisites
 
-To follow this tutorial, you should have a basic understanding of quantum computing and materials science. Familiarity with quantum chemistry calculations and Density Functional Theory (DFT) will be helpful.
+To follow this tutorial, you should have a basic understanding of quantum computing and materials science or quantum chemistry, like simulating the H2 molecule or LiH tutorials by qiskit for example. Familiarity with quantum chemistry calculations and Density Functional Theory (DFT) will be helpful.
 
 ## Hands-on Example
 
 ### 1. Classical Calculations
 For detailed information about the classical calculations, including supercell generation, geometry optimization, supercell calculations, and binding energy calculation, please see [Classical Calculations](classical_calculations.md).
+
+The supercell used in this tutorial is a 4x4x1 Al(111) substrate with a 1,2,4-triazole molecule on top of the Al(111) surface. 
+
+![The geometry optimized supercell of triazole molecule on top Al substrate](../img/example_supercell.svg)
 
 ### 2. Hybrid Quantum Classical Calculation
 
@@ -57,11 +61,6 @@ After performing the hybrid quantum-classical calculations, we analyze the bindi
 ```python
 E_binding = E_supercell - (E_substrate + E_inhibitor)
 ```
-
-#### Geometry Optimization Results
-- **1,2,4-Triazole**:
-  - Binding distance: 3.54 Å
-
 #### Binding Energy Comparison
 
 | Method | Inhibitor | Binding Energy (eV) | Binding Distance (Å) |
