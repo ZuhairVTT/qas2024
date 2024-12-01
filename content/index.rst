@@ -27,6 +27,9 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
    :caption: Day 1
 
    welcome
+   qaoa_vqe_intro
+   notebooks/QAS2024_QAOA_exercise.ipynb
+
 
 .. toctree::
    :maxdepth: 1
