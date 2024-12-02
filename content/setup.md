@@ -88,6 +88,15 @@ $ pip install -r requirements.txt
 
 You can download the `requirements.txt` [here](requirements.txt).
 
+To get access to the notebooks covered during the school, you can clone the Git repository behind this lesson page:
+
+```console
+$ git clone https://github.com/ENCCS/qas2024.git
+$ cd content/notebooks
+```
+
+Alternatively, you can navigate to https://github.com/ENCCS/qas2024, click the green "Code" button, and select "Download ZIP".
+
 
 ## (Backup approach) [Notebooks.csc.fi](https://notebooks.rahtiapp.fi/welcome)
 
