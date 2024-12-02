@@ -4,8 +4,21 @@
 \frametitle{Quantum Computing Implementation}
 \begin{itemize}
     \item Active space embedding approach
-    \item ADAPT-VQE algorithm
+    \item ADAPT-VQE algorithm with UCCSD ansatz
     \item 2 electrons in 5 orbitals active space
+    \item Gradient threshold: 1e-4
+    \item DFT embedding convergence: 1E-6
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Active Space Configuration}
+\begin{itemize}
+    \item Self-consistent field (SCF) embedding
+    \item Orbital selection: Canonical (energy-ordered)
+    \item Maximum iterations: 100
+    \item Full GPW method for electron repulsion integrals
+    \item Periodic boundary conditions maintained
 \end{itemize}
 \end{frame}
 
@@ -13,7 +26,26 @@
 \frametitle{Integration Strategy}
 \begin{itemize}
     \item Socket-based communication between CP2K and Qiskit
-    \item Self-consistent embedding iterations
-    \item Multiple VQE implementations tested
+    \item FCIDUMP format for integral transfer
+    \item Multiple VQE implementations:
+    \begin{itemize}
+        \item Standard VQE with UCCSD
+        \item AdaptVQE with dynamic ansatz
+        \item StatefulVQE with warm-starting
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimizer Configuration}
+\begin{itemize}
+    \item SPSA optimizer settings:
+    \begin{itemize}
+        \item Maximum iterations: 1000
+        \item Learning rate: 0.005
+        \item Perturbation: 0.05
+    \end{itemize}
+    \item Convergence criteria for embedding iterations
+    \item Active space solver: Qiskit
 \end{itemize}
 \end{frame} 

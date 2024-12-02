@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.30)  1 DEC 2024 23:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.30)  2 DEC 2024 09:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/karim/github/qas2024/matsci_on_qc/.slides/main.tex
-(/Users/karim/github/qas2024/matsci_on_qc/.slides/main.tex
+**/Users/karim/github/qas2024/content/matsci_on_qc/slides/main.tex
+(/Users/karim/github/qas2024/content/matsci_on_qc/slides/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
@@ -856,59 +856,99 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 ] [4
 
+] [5
+
+]
+<../../../content/img/matsci_qc_simple_hybrid_wf.png, id=197, 1321.63762pt x 736.70232pt>
+File: ../../../content/img/matsci_qc_simple_hybrid_wf.png Graphic file (type png)
+<use ../../../content/img/matsci_qc_simple_hybrid_wf.png>
+Package pdftex.def Info: ../../../content/img/matsci_qc_simple_hybrid_wf.png  used on input line 38.
+(pdftex.def)             Requested size: 325.17949pt x 181.25243pt.
+ [6
+
+ <../../../content/img/matsci_qc_simple_hybrid_wf.png>]
+<../../../content/img/matsci_qc_simple_hybrid_wf_with_example.png, id=227, 1300.86pt x 1195.6168pt>
+File: ../../../content/img/matsci_qc_simple_hybrid_wf_with_example.png Graphic file (type png)
+<use ../../../content/img/matsci_qc_simple_hybrid_wf_with_example.png>
+Package pdftex.def Info: ../../../content/img/matsci_qc_simple_hybrid_wf_with_example.png  used on input line 44.
+(pdftex.def)             Requested size: 222.48985pt x 204.47449pt.
+ [7
+
+ <../../../content/img/matsci_qc_simple_hybrid_wf_with_example.png>]
+<../../../content/img/matsci_qc_simplify_problem.png, id=257, 412.39069pt x 211.84143pt>
+File: ../../../content/img/matsci_qc_simplify_problem.png Graphic file (type png)
+<use ../../../content/img/matsci_qc_simplify_problem.png>
+Package pdftex.def Info: ../../../content/img/matsci_qc_simplify_problem.png  used on input line 53.
+(pdftex.def)             Requested size: 325.17949pt x 167.04579pt.
+ [8
+
+ <../../../content/img/matsci_qc_simplify_problem.png>] [9
+
 ])
 \openout2 = `sections/02_classical.aux'.
 
- (./sections/02_classical.tex [5
-
-
-
-
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 24.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 24.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-<../../content/img/workflow_viz1.png, id=196, 864.98157pt x 468.85162pt>
-File: ../../content/img/workflow_viz1.png Graphic file (type png)
-<use ../../content/img/workflow_viz1.png>
-Package pdftex.def Info: ../../content/img/workflow_viz1.png  used on input line 24.
-(pdftex.def)             Requested size: 171.14764pt x 92.76709pt.
- [6
-
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <../../content/img/workflow_viz1.png>] [7
-
-])
-\openout2 = `sections/03_quantum.aux'.
-
- (./sections/03_quantum.tex [8
-
-
-
-
-] [9
-
-])
-\openout2 = `sections/04_results.aux'.
-
- (./sections/04_results.tex [10
+ (./sections/02_classical.tex [10
 
 
 
 
 ] [11
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 33.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 33.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
+<../../../content/img/workflow_viz1.png, id=367, 864.98157pt x 468.85162pt>
+File: ../../../content/img/workflow_viz1.png Graphic file (type png)
+<use ../../../content/img/workflow_viz1.png>
+Package pdftex.def Info: ../../../content/img/workflow_viz1.png  used on input line 33.
+(pdftex.def)             Requested size: 171.14764pt x 92.76709pt.
+ [12
+
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <../../../content/img/workflow_viz1.png>] [13
+
+] [14
+
+])
+\openout2 = `sections/03_quantum.aux'.
+
+ (./sections/03_quantum.tex [15
+
+
+
+
+] [16
+
+] [17
+
+] [18
+
+])
+\openout2 = `sections/04_results.aux'.
+
+ (./sections/04_results.tex [19
+
+
+
+
+] [20
+
+] [21
+
+] [22
 
 ])
 \tf@nav=\write6
@@ -929,18 +969,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1051E320D723783A8E269A7446C0A13E;483.
  ) 
 Here is how much of TeX's memory you used:
- 27910 strings out of 474116
- 568066 string characters out of 5743681
+ 28068 strings out of 474116
+ 572453 string characters out of 5743681
  1938187 words of memory out of 5000000
- 49669 multiletter control sequences out of 15000+600000
- 566327 words of font info for 65 fonts, out of 8000000 for 9000
+ 49805 multiletter control sequences out of 15000+600000
+ 566926 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,428b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on main.pdf (11 pages, 200619 bytes).
+ 128i,15n,123p,435b,639s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
+Output written on main.pdf (22 pages, 902480 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 334 compressed objects within 4 object streams
- 27 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 713 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

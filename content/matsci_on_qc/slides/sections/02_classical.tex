@@ -10,6 +10,15 @@
 \end{frame}
 
 \begin{frame}
+\frametitle{Case Study: Corrosion Inhibition}
+\begin{itemize}
+    \item Study of 1,2,4-triazole molecule on Al(111) surface
+    \item Focus on metal-inhibitor interaction
+    \item Goal: Calculate binding energy accurately
+\end{itemize}
+\end{frame}
+
+\begin{frame}
 \frametitle{System Setup}
 \begin{columns}
 \column{0.5\textwidth}
@@ -19,16 +28,27 @@
     \item DZVP-MOLOPT-GTH basis sets
 \end{itemize}
 \column{0.5\textwidth}
-\includegraphics[width=\textwidth]{../../content/img/workflow_viz1.png}
+\includegraphics[width=\textwidth]{../../../content/img/workflow_viz1.png}
 \end{columns}
 \end{frame}
 
 \begin{frame}
-\frametitle{System Description}
+\frametitle{Computational Details}
 \begin{itemize}
-    \item Optimized geometry of 1,2,4-triazole on Al(111)
-    \item Periodic boundary conditions in XY plane
-    \item Vacuum gap in Z direction
-    \item Total system size: 8 atoms (inhibitor) + substrate
+    \item GPW method (500 Ry plane-wave cutoff)
+    \item Periodic boundary conditions with 25 Å vacuum gap
+    \item Fermi-Dirac distribution (1000 K electronic temperature)
+    \item DFT-D3 dispersion correction for van der Waals interactions
 \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Workflow Steps}
+\begin{enumerate}
+    \item Supercell generation with ASE
+    \item Geometry optimization with ML potentials
+    \item DFT calculations for periodic system
+    \item Binding energy calculation:
+    \[ E_{\text{binding}} = E_{\text{supercell}} - (E_{\text{substrate}} + E_{\text{inhibitor}}) \]
+\end{enumerate}
 \end{frame} 
