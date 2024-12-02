@@ -6,3 +6,5 @@ jupyter_execute
 .vscode
 content/matsci_on_qc/slides
 content/matsci_on_qc/slides/*
+content/matsci_on_qc/.DS_Store
+.DS_Store
