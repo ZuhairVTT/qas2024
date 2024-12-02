@@ -4,5 +4,5 @@
 .jupyter_cache
 jupyter_execute
 .vscode
-content/matsci_on_qc/slides/main.log
-content/matsci_on_qc/slides/main.fdb_latexmk
+content/matsci_on_qc/slides
+content/matsci_on_qc/slides/*
