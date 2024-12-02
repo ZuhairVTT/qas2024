@@ -2,18 +2,51 @@
 
 \begin{frame}
 \frametitle{Binding Energy Results}
+\begin{table}
+\begin{tabular}{lcc}
+\hline
+Method & Binding Energy (eV) & Distance (Å) \\
+\hline
+Classical DFT & -0.385512 & 3.54 \\
+AdaptVQE & -0.385508 & 3.54 \\
+Vanilla VQE & -2.325986 & 3.54 \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Analysis}
 \begin{itemize}
-    \item Classical DFT: -0.385512 eV
-    \item AdaptVQE: -0.385508 eV
-    \item Vanilla VQE: -2.325986 eV
+    \item AdaptVQE shows excellent agreement with classical DFT
+    \item Vanilla VQE shows significant deviation
+    \item Binding distance remains consistent across methods
+    \item Active space size limitations affect accuracy
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Future Work}
+\begin{itemize}
+    \item Expand active space to include more orbitals
+    \item Implement error mitigation techniques
+    \item Improve convergence of AdaptVQE algorithm
+    \item Study larger molecular systems
+    \item Integration with quantum centric supercomputers
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Conclusions}
 \begin{itemize}
-    \item AdaptVQE shows good agreement with classical DFT
-    \item Demonstrates feasibility of hybrid approach
-    \item Future work: larger active spaces and error mitigation
+    \item Successfully demonstrated hybrid quantum-classical workflow
+    \item AdaptVQE proves more robust than vanilla VQE
+    \item Current limitations:
+    \begin{itemize}
+        \item Active space size
+        \item Convergence challenges
+        \item Hardware constraints
+    \end{itemize}
+    \item Promising path for quantum-accelerated materials science
 \end{itemize}
 \end{frame} 
