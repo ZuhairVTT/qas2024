@@ -7,6 +7,8 @@ summary: Introduction to simulating materials using quantum computers
 
 > **Note**: This tutorial is based on research work available on [arXiv:6036926](https://arxiv.org/submit/6036926/view). Related codes and input files can be found in the [2024_inhibitQ repository](https://github.com/MarcMaussner/2024_inhibitQ/tree/main/phase2_submission).
 
+The slides for the talk related to this tutorial can be found [here](.slides/main.pdf) (right-click and select "Open in new tab" to view in browser). 
+
 ## Contents
 
 - [Introduction](#introduction)
