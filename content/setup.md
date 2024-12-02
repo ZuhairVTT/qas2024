@@ -8,6 +8,8 @@ Participants can run the course notebooks either on the Helmi quantum computer t
 
 A course environment has been made with preloaded modules ([qiskit-iqm](https://iqm-finland.github.io/qiskit-on-iqm/)) and resource settings for connecting to Helmi. This section offers guidance on accessing this environment.
 
+See also these {download}`up-to-date instructions <Introduction-to-QC-Course-env-LUMI-QAS.pdf>`.
+
 1. Log in to [LUMI Open OnDemand / web interface](https://www.lumi.csc.fi/public/) with your MyCSC / Haka account
 
 2. Click on "Jupyter for Courses"
@@ -51,6 +53,7 @@ A course environment has been made with preloaded modules ([qiskit-iqm](https://
 - https://fiqci.fi/_posts/2024-08-23-Lumi_web_introduction
 - https://docs.csc.fi/computing/quantum-computing/helmi/running-on-helmi/
 
+
 ---
 
 ## Locally with your laptop
@@ -85,4 +88,10 @@ $ pip install -r requirements.txt
 
 You can download the `requirements.txt` [here](requirements.txt).
 
+
+## (Backup approach) [Notebooks.csc.fi](https://notebooks.rahtiapp.fi/welcome)
+
+CSC's notebooks platform provides a preconfigured python environment and jupyter-lab server for running all of the jupyter notebooks shown in this course. **No setup is required** to run the notebooks. 
+
+Please find {download}`instructions here <Introduction-to-CSC-Noppe-QAS.pdf>`.
 
