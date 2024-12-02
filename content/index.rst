@@ -45,7 +45,7 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
 
    tergite-overview
    qelm
-   matsci_on_qc/README
+   matsci_on_qc/README.md
 
 .. toctree::
    :maxdepth: 1

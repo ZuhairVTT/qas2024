@@ -7,17 +7,19 @@ summary: Introduction to simulating materials using quantum computers
 
 > **Note**: This tutorial is based on research work available on [arXiv:6036926](https://arxiv.org/submit/6036926/view). Related codes and input files can be found in the [2024_inhibitQ repository](https://github.com/MarcMaussner/2024_inhibitQ/tree/main/phase2_submission).
 
+The slides for the talk related to this tutorial can be found [here](slides/main.pdf) (right-click and select "Open in new tab" to view in browser). 
+
 ## Contents
 
 - [Introduction](#introduction)
 - [Why Quantum Computing for Materials?](#why-quantum-computing-for-materials)
 - [Prerequisites](#prerequisites)
-- [Hands-on Examples](#hands-on-examples)
-  - [Classical Calculations](#1-classical-calculations)
-  - [Hybrid Quantum-Classical Implementation](#2-hybrid-quantum-classical-calculation)
-  - [Results & Analysis](#3-calculations-results)
+- [Hands-on Example](#hands-on-example)
+  - [Classical Calculations](#classical-calculations)
+  - [Hybrid Quantum-Classical Calculation](#hybrid-quantum-classical-calculation)
+  - [Results & Analysis](#results-and-analysis)
     - [Binding Energy Comparison](#binding-energy-comparison)
-    - [Discussion & Future Work](#outlook-and-discussion)
+    - [Discussion & Future Work](#discussion-and-future-work)
 
 ## Introduction
 
@@ -31,12 +33,16 @@ It is a hot topic now given the quantum centeric supercomputers effort and the r
 
 ## Prerequisites
 
-To follow this tutorial, you should have a basic understanding of quantum computing and materials science. Familiarity with quantum chemistry calculations and Density Functional Theory (DFT) will be helpful.
+To follow this tutorial, you should have a basic understanding of quantum computing and materials science or quantum chemistry, like simulating the H2 molecule or LiH tutorials by qiskit for example. Familiarity with quantum chemistry calculations and Density Functional Theory (DFT) will be helpful.
 
 ## Hands-on Example
 
-### 1. Classical calculations
+### 1. Classical Calculations
 For detailed information about the classical calculations, including supercell generation, geometry optimization, supercell calculations, and binding energy calculation, please see [Classical Calculations](classical_calculations.md).
+
+The supercell used in this tutorial is a 4x4x1 Al(111) substrate with a 1,2,4-triazole molecule on top of the Al(111) surface. 
+
+![The geometry optimized supercell of triazole molecule on top Al substrate](../img/example_supercell.svg)
 
 ### 2. Hybrid Quantum Classical Calculation
 
@@ -57,11 +63,6 @@ After performing the hybrid quantum-classical calculations, we analyze the bindi
 ```python
 E_binding = E_supercell - (E_substrate + E_inhibitor)
 ```
-
-#### Geometry Optimization Results
-- **1,2,4-Triazole**:
-  - Binding distance: 3.54 Å
-
 #### Binding Energy Comparison
 
 | Method | Inhibitor | Binding Energy (eV) | Binding Distance (Å) |
@@ -70,7 +71,7 @@ E_binding = E_supercell - (E_substrate + E_inhibitor)
 | AdaptVQE | 1,2,4-Triazole | -0.385508 | 3.54 |
 | Vanilla VQE | 1,2,4-Triazole | -2.325986 | 3.54 |
 
-#### Results Analysis
+#### Discussion and Future Work
 
 The results of this simulations show an agreement between classical DFT and AdaptVQE method. The AdaptVQE implementation proved more robust with its gradient-based operator pool selection compared to the vanilla VQE, which showed significant deviation with notably higher binding energy.
 
