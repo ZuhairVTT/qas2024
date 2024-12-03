@@ -43,6 +43,7 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
    qmc_fin
    notebooks/option_pricing.ipynb
    notebooks/option_pricing_tutorial.ipynb
+   qsip
 
 .. toctree::
    :maxdepth: 1
