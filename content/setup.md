@@ -12,18 +12,18 @@ See also these {download}`up-to-date instructions <Introduction-to-QC-Course-env
 
 1. Log in to [LUMI Open OnDemand / web interface](https://www.lumi.csc.fi/public/) with your MyCSC / Haka account
 
-2. Click on "Jupyter for Courses"
+2. Click on `Jupyter for Courses`
 
 ![OOD1](img/lumi-ood-1.png)
 
-3. You should get a prefilled page shown below, you can change a few variables such as your “working directory”.
+3. You should get a prefilled page shown below, you can change a few variables such as your `working directory`.
 
    - Please note what you selected as your working directory when launching your Jupyter Notebook as this will determine where your file is saved.
    - You can find more information about storage on LUMI here: https://docs.lumi-supercomputer.eu/storage/#__tabbed_1_1
   
 ![OOD1](img/lumi-ood-2.png)  
 
-4. You also have the flexibility to adjust some resource settings. By clicking “show custom resource settings”(Please note that memory should be kept under 3GB and the partition should always be `q_fiqci`).
+4. You also have the flexibility to adjust some resource settings. By clicking `show custom resource settings`(Please note that memory should be kept under 3GB).
 
 ![OOD1](img/lumi-ood-3.png)  
 
@@ -35,7 +35,7 @@ See also these {download}`up-to-date instructions <Introduction-to-QC-Course-env
 
 ![OOD1](img/lumi-ood-5.png)  
 
-7. Click on the big blue “Connect to Jupyter” button and it will launch a Jupyter notebook on a separate tab. Navigate to the new tab.
+7. Click on the big blue `Connect to Jupyter` button and it will launch a Jupyter notebook on a separate tab. Navigate to the new tab.
 
 8. Now you can create and run codes on a jupyter notebook. A sample is shown in the image below.
 
@@ -46,7 +46,9 @@ See also these {download}`up-to-date instructions <Introduction-to-QC-Course-env
    - go to the top left corner, click on file
    - click on `Save notebook` to save a specific file or `Save all` to save all file & changes
 
-10. This environment gives each user 2 hours and 2GB per session. It is configured to load the helmi_qiskit (qiskit-iqm) module and use the q_fiqci partition to connect to Helmi.
+10. This environment gives each user 2 hours and 2GB per session. It is configured to load the helmi_qiskit (qiskit-iqm) module and connect to Helmi.
+    
+11. To add extra python packages use `pip install --user <package-name>`
 
 **Useful Links**
 
