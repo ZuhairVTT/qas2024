@@ -54,6 +54,7 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
    notebooks/flight_scheduling_optimization_qaoa.ipynb
    qwalks
    tergite-overview
+   cos
    qelm
    matsci_on_qc/README.md
    ihpc
