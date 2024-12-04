@@ -9,6 +9,8 @@ summary: Introduction to simulating materials using quantum computers
 
 The slides for the talk related to this tutorial can be found [here](../slides/QAS2024_mat_sci_on_qc.pdf) (right-click and select "Open in new tab" to view in browser). 
 
+The demo files for this tutorial are described and detailed throughout the text here in this page and the associated pages. It should also appear in your LUMI notebooks, otherwise, you can download them from [here](../notebooks/mat_sc_on_qc).
+
 ## Contents
 
 - [Introduction](#introduction)
