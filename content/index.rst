@@ -27,6 +27,7 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
    :caption: Day 1
 
    welcome
+   hpc_qc
    helmi
    notebooks/GHZ_Estimator_Attendees.ipynb
    qaoa_vqe_intro
@@ -43,15 +44,20 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
    qmc_fin
    notebooks/option_pricing.ipynb
    notebooks/option_pricing_tutorial.ipynb
+   qsip
 
+   
 .. toctree::
    :maxdepth: 1
    :caption: Day 3
 
+   notebooks/flight_scheduling_optimization_qaoa.ipynb
    qwalks
    tergite-overview
+   cos
    qelm
    matsci_on_qc/README.md
+   ihpc
 
 .. toctree::
    :maxdepth: 1
