@@ -5,9 +5,9 @@ summary: Introduction to simulating materials using quantum computers
 
 # Quantum Computing for Materials Science
 
-> **Note**: This tutorial is based on research work available on [arXiv:6036926](https://arxiv.org/submit/6036926/view). Related codes and input files can be found in the [2024_inhibitQ repository](https://github.com/MarcMaussner/2024_inhibitQ/tree/main/phase2_submission).
+> **Note**: This tutorial is based on research work available on [arXiv:2412.00951](https://arxiv.org/abs/2412.00951). Related codes and input files can be found in the [2024_inhibitQ repository](https://github.com/MarcMaussner/2024_inhibitQ/tree/main/phase2_submission).
 
-The slides for the talk related to this tutorial can be found [here](../slides/Mat_Sci_on_QC.pdf) (right-click and select "Open in new tab" to view in browser). 
+The slides for the talk related to this tutorial can be found [here](../slides/QAS2024_mat_sci_on_qc.pdf) (right-click and select "Open in new tab" to view in browser). 
 
 ## Contents
 
