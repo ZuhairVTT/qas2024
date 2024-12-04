@@ -9,7 +9,7 @@ summary: Introduction to simulating materials using quantum computers
 
 The slides for the talk related to this tutorial can be found [here](../slides/QAS2024_mat_sci_on_qc.pdf) (right-click and select "Open in new tab" to view in browser). 
 
-The demo files for this tutorial are described and detailed throughout the text here in this page and the associated pages. It should also appear in your LUMI notebooks, otherwise, you can download them from [here](../notebooks/mat_sc_on_qc).
+The demo files for this tutorial are described and detailed throughout the text here in this page and the associated pages. It should also appear in your LUMI notebooks, otherwise, you can download them from [`mat_sc_on_qc`](https://github.com/ENCCS/qas2024/tree/main/content/notebooks/mat_sc_on_qc)
 
 ## Contents
 
@@ -52,8 +52,7 @@ This section demonstrates the integration of classical DFT calculations with qua
 
 Key components include:
 - Classical DFT calculations using CP2K
-- Quantum calculations using ADAPT-VQE algorithm
-- Active space embedding with SCF methodology
+- Quantum calculations with Active space embedding using ADAPT-VQE algorithm
 - Socket-based integration between classical and quantum components
 
 For detailed implementation information, including configuration parameters and workflow structure, see [Hybrid Quantum Classical Calculations](hybrid_quantum_classical.md).
@@ -79,11 +78,23 @@ The results of this simulations show an agreement between classical DFT and Adap
 
 #### Outlook and Discussion
 
-The calculation employed an active space of 2 electrons in 5 orbitals (10 spin-orbitals) around the Fermi level. The AdaptVQE implementation used a gradient threshold of 1e-4 and DFT embedding convergence of 1E-6, while the vanilla VQE used a less stringent convergence threshold of 2E-5. For more accurate results, expanding the active space to include more orbitals could lead to different binding energies compared to the classical approach, particularly in better capturing the complex hybridization between molecular orbitals and substrate states. At the time of writting this tutorial, only the assigned number of orbitals and electrons managed the calculation to converge.
+The calculation employed an active space of 2 electrons in 5 orbitals (10 spin-orbitals) around the Fermi level. For more accurate results, expanding the active space to include more orbitals could lead to different binding energies compared to the classical approach, particularly in better capturing the complex hybridization between molecular orbitals and substrate states. At the time of writting this tutorial, only the assigned number of orbitals and electrons managed the calculation to converge.
 
 #### Conclusion and Future Work
 
 This work successfully demonstrating a workflow for hybrid quantum-classical calculations for materials science, suitable for running on quantum centric supercomputers like Lumi. A lot of work is still needed to make this method practical for large systems and to improve the convergence of the calculation when using the AdaptVQE algorithm and including more orbitals in the active space, which will make the calculation worth it on quantum computers. Ofcourse, error mitigation techniques will be needed to make this method practical, but that is another story.
+
+#### Snippets from the slides
+I believe those snippets augment the text and provide a better understanding of the work. Ofcourse, the full slides are available [here](../slides/QAS2024_mat_sci_on_qc.pdf) (right-click and select "Open in new tab" to view in browser).`
+
+Here comes the snippets from the slides:
+![Quantum centric-supercomputing](./slides_png/quantum-centric-supercomputing.png)
+![workflow_for_simulations](./slides_png/workflow_for_simulations.png)
+![quantum_embedding_in_action](./slides_png/quantum_embedding_in_action.png)
+![adaptVQE](./slides_png/adaptVQE.png)
+![practical_usecase](./slides_png/practical_usecase.png)
+![cp2k_qiskit_integration](./slides_png/cp2k_qiskit_integration.png)
+
 
 ## References
 
