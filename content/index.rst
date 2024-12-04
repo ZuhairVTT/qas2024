@@ -45,9 +45,11 @@ The quantum autumn school will be held in Stockholm in hybrid form, in-person an
    notebooks/option_pricing_tutorial.ipynb
    qsip
 
+   
 .. toctree::
    :maxdepth: 1
    :caption: Day 3
+
    notebooks/flight_scheduling_optimization_qaoa.ipynb
    qwalks
    tergite-overview
