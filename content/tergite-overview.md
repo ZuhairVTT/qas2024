@@ -5,7 +5,7 @@ summary: The software stack for the quantum computer.
 
 # Tergite overview
 
-{download}Slides <slides/qas-24-tergite-overview.pdf>
+{download}`Overview slides <slides/qas-24-tergite-overview.pdf>`
 
 ## Contents
 
